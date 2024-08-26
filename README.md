@@ -7,5 +7,7 @@ Nowadays, increasing the trend of stocks market, cryptocurrency, forex, and many
 
 ## Exploratory Data Analysis
 
+In this section I download dataset from the Yahoo finance (https://github.com/DannyP007/Project-/blob/main/Dataset.ipynb). This dataset provide the 7 different features for every stocks such as a Open price, Low price, Volume, and so on. In this data there are 20 diffrent company stocks data.
+![ Adjusted Close Price for 5 stocks (Nifty50)] (
 
 
