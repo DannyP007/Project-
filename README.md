@@ -12,9 +12,13 @@ In this section I download dataset from the Yahoo finance (https://github.com/Da
 
 ## Technical Analysis
 
-The technical analysis use for finding different chart pattern, identify the trend of the market. In this project i used simple moving avarage (SMA), EMA and RSI technical indicators.
+The technical analysis use for finding different chart pattern, identify the trend of the market. In this project i used simple moving avarage (SMA), EMA and Relative Strength Index (RSI) technical indicators.
 I visuliazation for one stock and apply using group by function through whole dataset.(https://github.com/DannyP007/Project-/blob/main/Images/EDA/download%20(2).png)
 (https://github.com/DannyP007/Project-/blob/main/Images/EDA/download%20(3).png).
+
+## Model Building 
+### 1. Long Short-Term Memory (LSTM)
+LSTM is a type of recurrent neural network (RNN) specifically designed to handle sequential data. There are three main key features first is capture the short and long term dependecies and designed to overcome the vanishing gradient problem in standard RNNs and widely used for time series forecasting and sequence prediction tasks.
 
 
 
