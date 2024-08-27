@@ -18,7 +18,9 @@ I visuliazation for one stock and apply using group by function through whole da
 
 ## Model Building 
 ### 1. Long Short-Term Memory (LSTM)
-LSTM is a type of recurrent neural network (RNN) specifically designed to handle sequential data. There are three main key features first is capture the short and long term dependecies and designed to overcome the vanishing gradient problem in standard RNNs and widely used for time series forecasting and sequence prediction tasks.
+LSTM is a type of recurrent neural network (RNN) specifically designed to handle sequential data. There are three main key features first is capture the short and long term dependecies and designed to overcome the vanishing gradient problem in standard RNNs and widely used for time series forecasting and sequence prediction tasks. The model takes sequences of stock prices (60 timesteps) as input sequence length.In this LSTM model using three LSTM layers with 64, 64, and 32 units, respectively. The first two LSTM layers return sequences to pass the data through the next LSTM layers. The final LSTM layer reduces the output to a single vector. Dropout Layers for reduce the risk of overfitting.
+In the training Data the model is trained on 80% of the dataset with 20% reserved for testing. the training Process the model is trained for 10 epochs with a batch size of 32, and validation is performed on 10% of the training data.
+After training, the model is evaluated using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE). The predictions and actual values are scaled back using a MinMaxScaler for accurate performance assessment.
 
 
 
