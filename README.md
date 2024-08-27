@@ -8,7 +8,9 @@ Nowadays, increasing the trend of stocks market, cryptocurrency, forex, and many
 ## Exploratory Data Analysis
 
 In this section I download dataset from the Yahoo finance (https://github.com/DannyP007/Project-/blob/main/Dataset.ipynb). This dataset provide the 7 different features for every stocks such as a Open price, Low price, Volume, and so on. In this data there are 20 diffrent company stocks data.
-![ Adjusted Close Price for 5 stocks (Nifty50)] ![image](https://github.com/DannyP007/Project-/tree/main/Images/EDA).
+![ Adjusted Close Price for 5 stocks (Nifty50)] 
+
+![image](https://github.com/DannyP007/Project-/blob/main/Images/EDA/download%20(2).png).
 
 ## Technical Analysis
 
@@ -23,14 +25,14 @@ In the training Data the model is trained on 80% of the dataset with 20% reserve
 After training, the model is evaluated using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE). The predictions and actual values are scaled back using a MinMaxScaler for accurate performance assessment.
 
 Result:
-![image](https://github.com/DannyP007/Project-/blob/main/Images/Result/Rf%20Result.png)
+![image](https://github.com/DannyP007/Project-/blob/main/Images/Result/download%20(1).png)
 
 ### 2. Gated Recurrent Unit (GRU)
 
 GRU is another type of RNN similar to LSTM but with a simpler architecture. It combines the input gate and forget gate into a single update gate, which makes GRUs computationally more efficient than LSTMs. The main key features is simple architecture compared to LSTM, making it faster to train and effectively captures sequential dependencies in time series data and suitable for scenarios with limited data or computational power. The model takes sequences 60 sequence length of stock prices input. There are two GRU layers with 50 units each. The first GRU layer returns sequences to pass the data through the next GRU layer, while the second layer does not return sequences, outputting a single vector. Using The Adam optimizer with a learning rate of 0.001 is used for training. The model is trained on 80% of the dataset with 20% reserved for testing. The model is trained for 10 epochs with a batch size of 32, and 10% of the training data is used for validation and using same matrix for reach the better model.
 
 Result:
-![image](https://github.com/DannyP007/Project-/blob/main/Images/Result/download%20(1).png)
+![image](https://github.com/DannyP007/Project-/blob/main/Images/Result/download.png)
 
 ### 3. Random Forest
 Random Forest is an ensemble learning method based on decision trees. It operates by constructing a multitude of decision trees during training and outputting the mean prediction (for regression tasks) of the individual trees. Unlike LSTM and GRU, which are deep learning models, Random Forest is a traditional machine learning algorithm that doesn’t inherently consider sequential information. which is robust to overfitting due to ensemble learning and performs well with relatively little data preprocessing. Also, useful as a baseline for comparison with more complex models.
@@ -47,7 +49,14 @@ The LSTM model also performed well, with evaluation scores close to those of the
 
 The Random Forest model, while effective in other scenarios, did not perform well with this dataset. Its higher error metrics indicate that it struggled to capture the patterns in the time series data as effectively as the GRU and LSTM models. This model is less suited for sequential data like stock prices in this case.
 
-![image](https://github.com/DannyP007/Project-/tree/main/Images/Analysis)
+### GRU RESULT FOR EACH STOCK
+![image](https://github.com/DannyP007/Project-/blob/main/Images/Analysis/Screenshot%20(118).png)
+
+### LSTM RESULT FOR EACH STOCK
+![image](https://github.com/DannyP007/Project-/blob/main/Images/Analysis/Screenshot%20(119).png)
+
+### RF RESULT FOR EACH STOCK
+![image](https://github.com/DannyP007/Project-/blob/main/Images/Analysis/Screenshot%20(120).png)
 
 ## Conclusion
 
