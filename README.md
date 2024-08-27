@@ -39,7 +39,8 @@ The input features for each stock using group by function such as a 7-day SMA, 3
 Result:
 (https://github.com/DannyP007/Project-/blob/main/Images/Result/Rf%20Result.png).
 
-##Result And Analysis
+## Result And Analysis
+
 After evaluating the performance of all three models—GRU, LSTM, and Random Forest—based on key metrics (MSE, RMSE, and MAE), the results indicate that the GRU model significantly outperformed the others.The GRU model delivered the most accurate results with an MSE of 0.008, RMSE of 0.09, and MAE of 0.06. These metrics suggest that the GRU model closely aligns with the actual stock prices, making it the most reliable model for this prediction task.
 The LSTM model also performed well, with evaluation scores close to those of the GRU model. While the LSTM model shows good predictive capabilities, it slightly underperforms compared to GRU, with slightly higher error metrics.
 The Random Forest model, while effective in other scenarios, did not perform well with this dataset. Its higher error metrics indicate that it struggled to capture the patterns in the time series data as effectively as the GRU and LSTM models. This model is less suited for sequential data like stock prices in this case.
