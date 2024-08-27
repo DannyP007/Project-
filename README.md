@@ -9,13 +9,16 @@ Nowadays, increasing the trend of stocks market, cryptocurrency, forex, and many
 
 In this section I download dataset from the Yahoo finance (https://github.com/DannyP007/Project-/blob/main/Dataset.ipynb). This dataset provide the 7 different features for every stocks such as a Open price, Low price, Volume, and so on. In this data there are 20 diffrent company stocks data.
 ![ Adjusted Close Price for 5 stocks (Nifty50)] 
+![image](https://github.com/DannyP007/Project-/blob/main/Images/EDA/download%20(4).png)
 
-![image](https://github.com/DannyP007/Project-/blob/main/Images/EDA/download%20(2).png).
 
 ## Technical Analysis
 
 The technical analysis use for finding different chart pattern, identify the trend of the market. In this project i used simple moving avarage (SMA), EMA and Relative Strength Index (RSI) technical indicators.
-I visuliazation for one stock and apply using group by function through whole dataset.(https://github.com/DannyP007/Project-/blob/main/Images/EDA/download%20(2).png)
+I visuliazation for one stock and apply using group by function through whole dataset.
+
+![image](https://github.com/DannyP007/Project-/blob/main/Images/EDA/download%20(2).png).
+
 ![image](https://github.com/DannyP007/Project-/blob/main/Images/EDA/download%20(3).png).
 
 ## Model Building 
